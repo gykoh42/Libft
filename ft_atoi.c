@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 20:19:47 by gogyeong-a        #+#    #+#             */
-/*   Updated: 2023/04/14 12:44:52 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/04/14 16:32:17 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int ft_atoi(const char *str)
 {
-    size_t  answer;
+    size_t              answer;
     int                 sign;
     size_t              i;
 
