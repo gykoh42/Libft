@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 16:10:11 by gykoh             #+#    #+#             */
-/*   Updated: 2023/04/15 20:23:04 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/04/17 16:40:45 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,12 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-    char    *last;
-    char    find;
-    size_t  i;
+    size_t i;
 
-    last = (char *)s;
-    find = (char)c;
-    i = ft_strlen(s) - 1;
-    while (i >= 0)
-    {
-        if (last[i] == find)
-            return (last + i);
+    i = ft_strlen(s);
+    while (i > 0 && s[i] != (char)c)
         i--;
-    }
+    if (s[i] == (char)c)
+        return ((char *)(s + i));
     return (0);
 }
