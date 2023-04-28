@@ -6,13 +6,13 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 17:05:08 by gykoh             #+#    #+#             */
-/*   Updated: 2023/04/14 17:19:08 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/04/28 16:33:25 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
-        return (c - 32);
-    return (c);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }

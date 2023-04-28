@@ -6,13 +6,13 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 17:19:23 by gykoh             #+#    #+#             */
-/*   Updated: 2023/04/14 17:21:19 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/04/28 16:33:57 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if (c >= 'A' && c <= 'Z')
-        return (c + 32);
-    return (c);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }
