@@ -6,13 +6,13 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 02:04:37 by gykoh             #+#    #+#             */
-/*   Updated: 2023/04/15 15:44:25 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/04/28 15:32:21 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s, 0, n);
+	ft_memset(s, 0, n);
 }
