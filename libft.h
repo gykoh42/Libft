@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 16:48:22 by gykoh             #+#    #+#             */
-/*   Updated: 2023/04/30 20:34:45 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/05 12:36:11 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-char    *ft_strjoin(char const *s1, char const *s2);
-char    *ft_strjoin(char const *s1, char const *s2);
-char    **ft_split(char const *s, char c);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	**ft_split(char const *s, char c);
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);

@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/29 13:43:52 by gykoh             #+#    #+#             */
-/*   Updated: 2023/04/30 15:43:40 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/05 12:34:16 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,14 +71,4 @@ char    *ft_itoa(int n)
 		}
 	}
 	return (answer);
-}
-
-#include <stdio.h>
-
-int main()
-{
-	int num = -12345;
-	char *str = ft_itoa(num);
-	printf("num: %d\nstr: %s\n", num, str);
-	return 0;
 }
