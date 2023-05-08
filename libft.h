@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 16:48:22 by gykoh             #+#    #+#             */
-/*   Updated: 2023/05/08 21:10:45 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/08 22:23:29 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const *s, char c);
-char    *ft_itoa(int n);
-char    *ft_substr(char const *s, unsigned int start, size_t len);
-char    *ft_strtrim(char const *s1, char const *set);
+char	*ft_itoa(int n);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strtrim(char const *s1, char const *set);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putstr_fd(char *s, int fd);

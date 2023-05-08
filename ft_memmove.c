@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 17:44:20 by gykoh             #+#    #+#             */
-/*   Updated: 2023/05/08 19:31:39 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/08 22:21:58 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	d = (unsigned char *)dst;
 	s = (unsigned char *)src;
-
 	if (dst == 0 && src == 0)
 		return (0);
 	if (d < s)

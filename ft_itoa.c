@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 20:59:18 by gykoh             #+#    #+#             */
-/*   Updated: 2023/05/08 21:47:58 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/08 22:21:27 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_itoa(int n)
 {
 	int		len;
 	long	nb;
-	char 	*answer;
+	char	*answer;
 
 	len = ft_calc_len(n);
 	nb = n;

@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 14:53:19 by gykoh             #+#    #+#             */
-/*   Updated: 2023/05/08 20:48:30 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/08 22:27:49 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	end;
 	char	*answer;
-	
+
 	if (s1 == 0 || set == 0)
 		return (0);
 	start = 0;
