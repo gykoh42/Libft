@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 20:59:15 by gykoh             #+#    #+#             */
-/*   Updated: 2023/05/14 21:23:11 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/15 22:44:20 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,19 +48,19 @@ static char	**ft_free(char **answer)
 
 static size_t	ft_word_cnt(char const *s, char c)
 {
-	size_t	word_size;
+	size_t	word_cnt;
 	size_t	i;
 
 	i = 0;
-	word_size = 0;
+	word_cnt = 0;
 	while (s[i] != '\0')
 	{
 		if ((i == 0 && s[i] != c)
 			|| (s[i] == c && s[i + 1] != '\0' && s[i + 1] != c))
-			word_size++;
+			word_cnt++;
 		i++;
 	}
-	return (word_size);
+	return (word_cnt);
 }
 
 char	**ft_split(char const *s, char c)

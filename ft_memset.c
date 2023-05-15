@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 22:44:19 by gykoh             #+#    #+#             */
-/*   Updated: 2023/04/28 16:26:37 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/15 22:40:02 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_memset(void *b, int c, size_t len)
 		ptr[i] = (unsigned char)c;
 		i++;
 	}
-	return (b);
+	return (ptr);
 }
