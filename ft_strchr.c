@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 15:58:42 by gykoh             #+#    #+#             */
-/*   Updated: 2023/04/28 16:27:46 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/19 17:07:53 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,13 @@
 char	*ft_strchr(const char *s, int c)
 {
 	size_t	i;
+	char	tmp_c;
 
 	i = 0;
-	while (s[i] != '\0')
-	{
-		if (s[i] == (char)c)
-			return ((char *)(s + i));
+	tmp_c = (char)c;
+	while (s[i] != '\0' && s[i] != tmp_c)
 		i++;
-	}
-	if (s[i] == (char)c)
+	if (s[i] == tmp_c)
 		return ((char *)(s + i));
 	return (0);
 }

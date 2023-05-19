@@ -1,6 +1,7 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
+HEADER = libft.h
 
 SRCS = 	ft_isalpha.c \
 		ft_isdigit.c \
@@ -44,7 +45,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
+%.o: %.c ${HEADER}
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:

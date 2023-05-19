@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 20:19:47 by gogyeong-a        #+#    #+#             */
-/*   Updated: 2023/04/28 15:27:37 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/19 15:43:14 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,6 @@ int	ft_atoi(const char *str)
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		answer = answer * 10 + (str[i] - '0');
-		if (answer > 9223372036854775807 && sign == 1)
-			return (-1);
-		if (answer > 9223372036854775807 && sign == -1)
-			return (0);
 		i++;
 	}
 	return ((int)(answer * sign));

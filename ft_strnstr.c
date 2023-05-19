@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 21:24:55 by gykoh             #+#    #+#             */
-/*   Updated: 2023/05/15 22:48:25 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/19 17:19:17 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 
-	if (needle[0] == '\0')
+	if (*needle == '\0')
 		return ((char *)haystack);
 	while (*haystack != '\0' && len > 0)
 	{

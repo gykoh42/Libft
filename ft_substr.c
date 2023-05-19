@@ -6,7 +6,7 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/07 14:52:48 by gykoh             #+#    #+#             */
-/*   Updated: 2023/05/08 22:23:00 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/05/19 20:02:03 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	answer = (char *)malloc(sizeof(char) * (len + 1));
 	if (!answer)
 		return (0);
-	while (i < start + len && s[i] != '\0')
-	{
-		answer[ans_idx] = s[i];
-		ans_idx++;
-		i++;
-	}
-	answer[ans_idx] = '\0';
+	ft_strlcpy(answer, s + start, len + 1);
 	return (answer);
 }
