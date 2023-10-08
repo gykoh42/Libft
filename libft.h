@@ -6,15 +6,20 @@
 /*   By: gykoh <gykoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 16:48:22 by gykoh             #+#    #+#             */
-/*   Updated: 2023/05/19 15:44:16 by gykoh            ###   ########.fr       */
+/*   Updated: 2023/10/08 15:57:39 by gykoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdarg.h>
 
 int		ft_atoi(const char *str);
 int		ft_isalpha(int c);
@@ -51,5 +56,17 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+int		ft_printf(const char *format, ...);
+int		ft_putchar_pf(char c);
+int		ft_putstr_pf(char *str);
+int		ft_putnbr_pf(long long n);
+int		ft_puthex_pf(unsigned long n, int flag);
+int		ft_putaddr_pf(unsigned long n);
+int		ft_check(char c, va_list *args);
+
+char	*get_next_line(int fd);
+char	*ft_read_line(int fd, char *storage);
+char	*ft_extract_line(char **storage);
 
 #endif
